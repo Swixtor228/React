@@ -1,6 +1,6 @@
 # How to start the server without errors
 
-To launch this site, you need to enter the command \
+To launch this site, you need to enter the command
 ### `npm install`
 after installation, the `node_modules` folder should appear
 
