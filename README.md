@@ -1,3 +1,9 @@
+# How to start the server without errors
+
+To launch this site, you need to enter the command \
+### `npm install`
+after installation, the `node_modules` folder should appear
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
