@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import '../App.css';
 import { useEffect, useState } from 'react';
 import UserList from '../components/UserList';
@@ -10,7 +11,7 @@ const Users = (props) => {
   useEffect(() => {
     fetchUsers()
   }, [])
-  
+
   const fetchUsers = async () => {
     const users = await axios.get('https://jsonplaceholder.typicode.com/users')
     setUsers(users.data);
@@ -19,7 +20,7 @@ const Users = (props) => {
   const [users, setUsers] = useState("");
   const [user, setUser] = useState({ name: '', phone: '' });
   const onChange = (e) => {
-    if (e.target.id == "name") {
+    if (e.target.id === "name") {
       setUser({ ...user, name: e.target.value })
     }
     else {
@@ -35,11 +36,11 @@ const Users = (props) => {
   }
 
   const clearModal = (value) => {
-    setUser({ name: '', phone: '' }) 
+    setUser({ name: '', phone: '' })
   }
 
   const deleteUser = (id) => {
-    const confirm = window.confirm("это точно нужно удалить?")
+    const confirm = window.confirm("Вы действительно хотите это удалить?")
     if (confirm) setUsers(users.filter((user) => user.id !== id))
   }
 
@@ -86,7 +87,7 @@ const Users = (props) => {
                 <a className="waves-effect waves-light btn m-1" onClick={() => AddUser()}>Add</a>
               </div>
               <div className="col s6">
-                <a className="waves-effect waves-light btn m-1" onClick={() => {setModal(false); clearModal()}} >Cancel</a>
+                <a className="waves-effect waves-light btn m-1" onClick={() => {setModal(false); clearModal() }} >Cancel</a>
               </div>
             </div>
           </div>

@@ -50,7 +50,7 @@ const Post = () => {
   }
 
   const deletePost = (id) => {
-    const confirm = window.confirm("это точно нужно удалить?")
+    const confirm = window.confirm("Вы действительно хотите это удалить?")
     if (confirm) setPosts(posts.filter((post) => post.id !== id))
   }
 
@@ -71,7 +71,7 @@ const Post = () => {
 
     <div className="container">
       <div className="row">
-        <h2>Posts</h2>
+        <h3 className="center-align">Posts</h3>
         <form className="col s12">
           <div className="input-field col s12">
             <i className="material-icons prefix">search</i>

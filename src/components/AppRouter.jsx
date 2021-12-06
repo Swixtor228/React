@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { Switch, Route, Redirect } from "react-router";
-import { useState } from "react/cjs/react.development";
 import AuthContext from "../context";
 import Devices from "../pages/Devices";
 import Login from "../pages/Login";
@@ -8,6 +7,7 @@ import Users from "../pages/Users";
 import Post from "../pages/Post";
 import Gallery from "../pages/Gallery";
 import Loader from "react-loader-spinner";
+import Game from "../pages/Game";
 
 const AppRouter = () => {
     const {isAuth,isLoading}=useContext(AuthContext)
@@ -24,6 +24,7 @@ const AppRouter = () => {
     return (
         isAuth?
         <Switch>
+            <Route path="/game" component={Game} />
             <Route path="/users" component={Users} />
             <Route path="/devices" component={Devices} />
             <Route path="/post" component={Post} />

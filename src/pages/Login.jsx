@@ -1,6 +1,5 @@
 import '../App.css';
-import { useState, useEffect, useContext } from 'react';
-import axios from 'axios';
+import { useState, useContext } from 'react';
 import AuthContext from '../context';
 
 
@@ -46,23 +45,6 @@ const Login = () => {
                         </button>
                     </div>
                 </form>
-                {/* <h2>Авторизация</h2>
-                <form id="login">
-                    <div className="login-field">
-                        <i className="login-margin material-icons prefix">account_circle</i>
-                        <input id="login" type="text" className="validate" onChange={onChange} />
-                    </div>
-                    <div className="login-field">
-                        <i className="login-margin material-icons prefix">dialpad</i>
-                        <input id="password" type="tel" className="validate" onChange={onChange} />
-                    </div>
-                    <div className="button-section">
-                        <button onClick={() => onLogin()} className="btn waves-effect waves-light" type="submit" name="action">
-                            Login
-                            <i className="material-icons right">account_box</i>
-                        </button>
-                    </div>
-                </form> */}
             </div>
         </div>
     );
