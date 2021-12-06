@@ -52,17 +52,17 @@ const Game = () => {
       <div className="center-align container">
         <h3>Tic Tac Toe</h3>
         <div className="align-div-center">
-            <div className="row">
+            <div className="my-row">
                 <SquareComponent className="b-bottom-right" onClick={() => onUserClicked(0)} state={gameState[0]}/>
                 <SquareComponent className="b-bottom-right" onClick={() => onUserClicked(1)} state={gameState[1]}/>
                 <SquareComponent className="b-bottom" onClick={() => onUserClicked(2)} state={gameState[2]}/>
             </div>
-            <div className="row">
+            <div className="my-row">
                 <SquareComponent className="b-bottom-right" onClick={() => onUserClicked(3)} state={gameState[3]}/>
                 <SquareComponent className="b-bottom-right" onClick={() => onUserClicked(4)} state={gameState[4]}/>
                 <SquareComponent className="b-bottom" onClick={() => onUserClicked(5)} state={gameState[5]}/>
             </div>
-            <div className="row">
+            <div className="my-row">
                 <SquareComponent className="b-right" onClick={() => onUserClicked(6)} state={gameState[6]}/>
                 <SquareComponent className="b-right" onClick={() => onUserClicked(7)} state={gameState[7]}/>
                 <SquareComponent onClick={() => onUserClicked(8)} state={gameState[8]}/>
