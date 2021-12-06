@@ -13,7 +13,7 @@ const Devices = () => {
         'Xiaomi',
     ]
     const onChange = (e) => {
-        if (e.target.value == "") {
+        if (e.target.value === "") {
             setPhones(devices);
             return;
         }
